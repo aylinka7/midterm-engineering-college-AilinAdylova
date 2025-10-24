@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Engineering College</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<!-- Fixed Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-graduation-cap me-2"></i>Engineering College
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link btn-register" href="registration.html">Register Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="py-6 bg-primary text-white" style="margin-top: 76px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                <p class="lead">We're here to answer your questions and help you begin your journey</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info Cards -->
+<section class="py-6">
+    <div class="container">
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100 text-center p-4">
+                    <div class="mb-3">
+                        <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="mb-3">Visit Us</h5>
+                    <p class="text-muted mb-2">Engineering College</p>
+                    <p class="text-muted mb-2">123 Innovation Drive</p>
+                    <p class="text-muted mb-3">Tech City, TC 12345</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100 text-center p-4">
+                    <div class="mb-3">
+                        <i class="fas fa-phone fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="mb-3">Call Us</h5>
+                    <p class="text-muted mb-2"><strong>Main Office:</strong></p>
+                    <p class="text-muted mb-2">+1 (555) 123-4567</p>
+                    <p class="text-muted mb-2"><strong>Admissions:</strong></p>
+                    <p class="text-muted mb-3">+1 (555) 123-4568</p>
+                    <p class="text-muted small">Mon-Fri: 8AM - 6PM</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100 text-center p-4">
+                    <div class="mb-3">
+                        <i class="fas fa-envelope fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="mb-3">Email Us</h5>
+                    <p class="text-muted mb-2"><strong>General Inquiries:</strong></p>
+                    <p class="text-muted mb-2">info@engineeringcollege.edu</p>
+                    <p class="text-muted mb-2"><strong>Admissions:</strong></p>
+                    <p class="text-muted mb-3">admissions@engineeringcollege.edu</p>
+                    <p class="text-muted small">Response within 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4">Send Us a Message</h2>
+                        <p class="text-center text-muted mb-5">Fill out the form below and we'll get back to you as soon as possible</p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Department Contacts -->
+<section class="py-6">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="display-5 fw-bold mb-3">Department Contacts</h2>
+                <p class="lead text-muted">Reach out to specific departments for specialized assistance</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3"><i class="fas fa-user-tie text-primary me-2"></i>Admissions Office</h5>
+                        <p class="text-muted small mb-3">For questions about applications, requirements, and enrollment</p>
+                        <p class="mb-1"><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:admissions@engineeringcollege.edu">admissions@engineeringcollege.edu</a></p>
+                        <p class="mb-0"><i class="fas fa-phone text-primary me-2"></i>+1 (555) 123-4568</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3"><i class="fas fa-dollar-sign text-primary me-2"></i>Financial Aid</h5>
+                        <p class="text-muted small mb-3">For scholarships, grants, loans, and payment plans</p>
+                        <p class="mb-1"><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:finaid@engineeringcollege.edu">finaid@engineeringcollege.edu</a></p>
+                        <p class="mb-0"><i class="fas fa-phone text-primary me-2"></i>+1 (555) 123-4569</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3"><i class="fas fa-book text-primary me-2"></i>Academic Advising</h5>
+                        <p class="text-muted small mb-3">For course selection, degree planning, and academic support</p>
+                        <p class="mb-1"><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:advising@engineeringcollege.edu">advising@engineeringcollege.edu</a></p>
+                        <p class="mb-0"><i class="fas fa-phone text-primary me-2"></i>+1 (555) 123-4570</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3"><i class="fas fa-home text-primary me-2"></i>Housing Services</h5>
+                        <p class="text-muted small mb-3">For on-campus housing, roommate matching, and facilities</p>
+                        <p class="mb-1"><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:housing@engineeringcollege.edu">housing@engineeringcollege.edu</a></p>
+                        <p class="mb-0"><i class="fas fa-phone text-primary me-2"></i>+1 (555) 123-4571</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3"><i class="fas fa-briefcase text-primary me-2"></i>Career Services</h5>
+                        <p class="text-muted small mb-3">For internships, job placement, and career counseling</p>
+                        <p class="mb-1"><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:careers@engineeringcollege.edu">careers@engineeringcollege.edu</a></p>
+                        <p class="mb-0"><i class="fas fa-phone text-primary me-2"></i>+1 (555) 123-4572</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3"><i class="fas fa-globe text-primary me-2"></i>International Students</h5>
+                        <p class="text-muted small mb-3">For visa support, cultural transition, and international programs</p>
+                        <p class="mb-1"><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:international@engineeringcollege.edu">international@engineeringcollege.edu</a></p>
+                        <p class="mb-0"><i class="fas fa-phone text-primary me-2"></i>+1 (555) 123-4573</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Office Hours -->
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-5 text-center">
+                        <i class="fas fa-clock fa-3x text-primary mb-4"></i>
+                        <h3 class="mb-4">Office Hours</h3>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 mb-3">
+                                <h5>Admissions Office</h5>
+                                <p class="text-muted mb-1">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p class="text-muted mb-1">Saturday: 10:00 AM - 3:00 PM</p>
+                                <p class="text-muted">Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="alert alert-info mt-4" role="alert">
+                            <i class="fas fa-info-circle me-2"></i>Campus closed on federal holidays. Summer hours may vary.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5 class="mb-3"><i class="fas fa-graduation-cap me-2"></i>Engineering College</h5>
+                <p class="text-light-gray">Shaping the future through excellence in engineering education and innovation.</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="programs.html" class="text-light-gray">Programs</a></li>
+                    <li><a href="admissions.html" class="text-light-gray">Admissions</a></li>
+                    <li><a href="student-life.html" class="text-light-gray">Student Life</a></li>
+                    <li><a href="contact.html" class="text-light-gray">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-3">Contact Info</h5>
+                <p class="text-light-gray mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Innovation Drive, Tech City</p>
+                <p class="text-light-gray mb-2"><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+                <p class="text-light-gray"><i class="fas fa-envelope me-2"></i>info@engineeringcollege.edu</p>
+            </div>
+        </div>
+        <hr class="my-4 bg-secondary">
+        <div class="text-center text-light-gray">
+            <p class="mb-0">&copy; 2025 Engineering College. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
