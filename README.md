@@ -5,7 +5,7 @@ A modern, responsive, multi-page brochure website for Engineering College built 
 ## 🌐 Live Demo
 
 - **GitHub Repository:** https://github.com/aylinka7/midterm-engineering-college-AilinAdylova
-- **Live Site:** [Your GitHub Pages URL]
+- **Live Site:** https://aylinka7.github.io/midterm-engineering-college-AilinAdylova/
 
 ## 📋 Project Overview
 
