@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
     position: relative;
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -173,12 +173,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .scroll-indicator {
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
+    /*top: 30px;*/
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
     animation: bounce 2s infinite;
     opacity: 0.7;
+}
+@media (max-width: 576px) {
+    .scroll-indicator {
+        display: none;  /* Просто скрываем на маленьких экранах */
+    }
 }
 
 @keyframes bounce {
@@ -617,8 +623,9 @@ footer.site-footer a:hover {
 /* Responsive */
 @media (max-width: 768px) {
     .hero-section {
-        min-height: 60vh;
-        padding-top: 80px;
+        /*min-height: 90vh;*/
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .display-3 {
@@ -662,6 +669,10 @@ footer.site-footer a:hover {
 
 .skip-link:focus {
     top: 0;
+}
+
+.main-title {
+    margin-top: 100px;
 }
 
 *:focus-visible {
